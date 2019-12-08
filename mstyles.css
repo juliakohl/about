@@ -1,0 +1,183 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  font-size: 1rem;
+  text-align: center;
+  padding: 2%;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+}
+a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: #1b175a;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+section {
+  padding: 40px 3% 50px 3%;
+  border-radius: 10px;
+}
+section:nth-of-type(2n-1) {
+  background-color: #efecff;
+}
+.content {
+  position: relative;
+  text-align: center;
+}
+.icon {
+  height: 10px;
+}
+.jukCircular {
+  width: 40%;
+  height: auto;
+  border-radius: 100%;
+}
+.collapsable {
+  display: none;
+}
+.collapsable.show {
+  display: inline-block;
+}
+#profilepic {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+.lightoverlay {
+  background-color: rgba(255, 255, 255, 0.384);
+  width: 40%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  right: 30%;
+  align-self: center;
+}
+#navbar {
+  background-color: #fff;
+  padding: 0 25px;
+  position: fixed;
+  width: 100vw;
+  height: fit-content;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: black;
+  display: none;
+}
+#navbar .logo {
+  font-weight: 800;
+  float: left;
+  vertical-align: middle;
+  padding-top: 15px;
+  padding-left: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#navbar .logo a:hover {
+  color: #030013;
+}
+#navbar ul {
+  float: right;
+  list-style: none;
+  margin: 20px 0;
+}
+#navbar ul li {
+  margin: 0 20px;
+}
+#navbar ul li a:hover {
+  color: #030013;
+  font-weight: 800;
+}
+.biggest-heading {
+  font-size: 2rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Great Vibes', cursive, 'Montserrat Subrayada', sans-serif;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-family: monospace;
+  opacity: 0.6;
+  font-size: 1.125rem;
+}
+#header {
+  height: 100vh;
+  width: 100%;
+  color: #030013;
+  overflow: hidden;
+  padding: 20px;
+  padding-top: 150px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+#header h1 {
+  padding-top: 20px;
+}
+#header a[data-role="button"] {
+  background-color: #030013;
+  border-color: #030013;
+  margin-top: 5%;
+}
+#header a[data-role="button"]:hover {
+  background-color: #1b175a;
+  border-color: #1b175a;
+}
+.socials a img.icon {
+  height: 30px;
+  width: auto;
+}
+.socials a img.icon:hover {
+  height: 35px;
+}
+#header > div.header-text > p > a:nth-child(2) > img {
+  right: 75px;
+}
+#header > div.header-text > p > a:nth-child(3) > img {
+  right: 125px;
+}
+#header > div.header-text > p > a:nth-child(4) > img {
+  right: 175px;
+}
+#header > div.header-text > p > a:nth-child(5) > img {
+  right: 225px;
+}
+#portfolio li {
+  cursor: pointer;
+  margin: 15px;
+}
+#portfolio li:hover {
+  font-weight: bold;
+}
+#portfolio #RaspiMusic {
+  display: none;
+  height: 90vh;
+  width: auto;
+}
+#footer {
+  background-color: #1b175a;
+  color: #fff;
+  margin: 0;
+  padding: 3%;
+}
+#footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}

@@ -1,0 +1,249 @@
+ // Colors
+ @background-color: #fff;
+ @background-color2: rgb(239, 236, 255);
+ @light-color: #fff;
+ @dark-color: rgb(3, 0, 19);
+ @dark-hvr-color: rgb(27, 23, 90);
+ @dark-overlay: rgba(0, 0, 0, 0.5);
+ @light-overlay: rgba(255, 255, 255, 0.384);
+ @dark: black;
+
+
+ // Fonts
+ @heading-font: @handwriting,
+ 'Montserrat Subrayada',
+ sans-serif;
+ @handwriting: 'Great Vibes',
+ cursive;
+ @p-font: 'Raleway',
+ sans-serif;
+ @biggest-font-size: 2rem;
+ @big-font-size: 1.5rem;
+ @reg-font-size: 1rem;
+
+
+ // General
+ body {
+     font-family: @p-font;
+     background-color: @background-color;
+     position: relative;
+     overflow-x: hidden;
+     font-size: @reg-font-size;
+     text-align: center;
+     padding: 2%;
+ }
+
+ a {
+     color: inherit;
+     cursor: pointer;
+
+     &:hover {
+         font-weight: bold;
+         text-decoration: none;
+         color: @dark-hvr-color;
+     }
+ }
+
+ ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ section {
+     padding: 40px 3% 50px 3%;
+     border-radius: 10px;
+     &:nth-of-type(2n-1) {
+         background-color: @background-color2;
+     }
+ }
+
+ .content {
+     position: relative;
+     text-align: center;
+ }
+
+ .icon {
+     height: 10px;
+ }
+
+ .jukCircular{
+     width: 40%;
+     height: auto;
+     border-radius: 100%;
+ }
+
+ .collapsable {
+     display: none;
+
+     &.show {
+         display: inline-block;
+     }
+ }
+
+#profilepic{
+    position: relative;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+ .lightoverlay{
+     background-color: @light-overlay;
+     width: 40%;
+     height: 100%;
+     border-radius: 100%;
+     position: absolute;
+     top: 0;
+     left: 30%;
+     right: 30%;
+     align-self: center;
+ }
+
+ // navbar
+ #navbar {
+     background-color: @light-color;
+     padding: 0 25px;
+     position: fixed;
+     width: 100vw;
+     height: fit-content;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     color: @dark;
+     display: none;
+
+     .logo {
+         font-weight: 800;
+         float: left;
+         vertical-align: middle;
+         padding-top: 15px;
+         padding-left: 0;
+         font-size: @big-font-size;
+         cursor: pointer;
+
+         a:hover {
+             color: @dark-color;
+         }
+     }
+
+     ul {
+         float: right;
+         list-style: none;
+         margin: 20px 0;
+
+         // margin-right: 50px;
+         li {
+             margin: 0 20px;
+             a:hover {
+                 color: @dark-color;
+                 font-weight: 800;
+             }
+         }
+     }
+ }
+
+ // Headings
+ .biggest-heading {
+     font-size: @biggest-font-size;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: @heading-font;
+     font-weight: 600;
+ }
+
+ h2 {
+     font-size: @big-font-size;
+ }
+
+ h3 {
+     font-family: monospace;
+     opacity: 0.6;
+     font-size: @big-font-size * 0.75;
+ }
+
+ // Header  
+ #header {
+     // background-image: url("images/gradient.png");
+     height: 100vh;
+     width: 100%;
+     color: @dark-color;
+     overflow: hidden;
+     padding: 20px;
+     padding-top: 150px;
+     position: relative;
+     text-align: center;
+     justify-content: center;
+     h1 {
+         padding-top: 20px;
+     }
+     a[data-role="button"] {
+         background-color: @dark-color;
+         border-color: @dark-color;
+         margin-top: 5%;
+
+         &:hover {
+             background-color: @dark-hvr-color;
+             border-color: @dark-hvr-color;
+         }
+     }
+ }
+
+ .socials a img.icon {
+     height: 30px;
+     width: auto;
+     &:hover {
+         height: 35px;
+     }
+ }
+
+ #header>div.header-text>p>a:nth-child(2)>img {
+     right: 75px;
+ }
+
+ #header>div.header-text>p>a:nth-child(3)>img {
+     right: 125px;
+ }
+
+ #header>div.header-text>p>a:nth-child(4)>img {
+     right: 175px;
+ }
+
+ #header>div.header-text>p>a:nth-child(5)>img {
+     right: 225px;
+ }
+
+ // Portfolio
+ #portfolio {
+     li {
+         cursor: pointer;
+        margin: 15px;
+         &:hover {
+             font-weight: bold;
+         }
+     }
+
+     #RaspiMusic {
+         display: none;
+         height: 90vh;
+         width: auto;
+     }
+ }
+
+
+ // Footer
+ #footer {
+     background-color: @dark-hvr-color;
+     color: @light-color;
+     margin: 0;
+     padding: 3%;
+
+     a:hover {
+         text-decoration: underline;
+         color: @light-color;
+     }
+ }

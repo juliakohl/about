@@ -20,6 +20,9 @@ ul {
   list-style: none;
   padding: 0;
 }
+ul li {
+  margin-bottom: 10px;
+}
 section {
   padding: 40px 3% 50px 3%;
   border-radius: 10px;
@@ -32,7 +35,10 @@ section:nth-of-type(2n-1) {
   text-align: center;
 }
 .icon {
-  height: 10px;
+  height: 15px;
+}
+#ico_menu {
+  height: 30px;
 }
 .jukCircular {
   width: 40%;
@@ -50,6 +56,9 @@ section:nth-of-type(2n-1) {
   width: fit-content;
   margin-bottom: 15px;
 }
+#profilepic img {
+  border: 1px solid;
+}
 .lightoverlay {
   background-color: rgba(255, 255, 255, 0.384);
   width: 40%;
@@ -66,12 +75,17 @@ section:nth-of-type(2n-1) {
   padding: 0 25px;
   position: fixed;
   width: 100vw;
-  height: fit-content;
+  height: 65px;
   z-index: 1;
   top: 0;
   left: 0;
   color: black;
   display: none;
+  overflow: hidden;
+}
+#navbar.active {
+  display: block;
+  height: fit-content;
 }
 #navbar .logo {
   font-weight: 800;
@@ -92,6 +106,9 @@ section:nth-of-type(2n-1) {
 }
 #navbar ul li {
   margin: 0 20px;
+}
+#navbar ul li:first-of-type {
+  margin-bottom: 15px;
 }
 #navbar ul li a:hover {
   color: #030013;

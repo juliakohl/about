@@ -127,10 +127,10 @@ h6 {
   font-family: 'Great Vibes', cursive, 'Montserrat Subrayada', sans-serif;
   font-weight: 600;
 }
-h2 {
+h3 {
   font-size: 1.5rem;
 }
-h3 {
+h2 {
   font-family: monospace;
   opacity: 0.6;
   font-size: 1.125rem;
@@ -159,8 +159,9 @@ h3 {
   border-color: #1b175a;
 }
 .socials a img.icon {
-  height: 30px;
+  height: 40px;
   width: auto;
+  margin: 5px;
 }
 .socials a img.icon:hover {
   height: 35px;

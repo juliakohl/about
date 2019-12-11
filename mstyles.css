@@ -3,7 +3,7 @@ body {
   background-color: #fff;
   position: relative;
   overflow-x: hidden;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   padding: 2%;
 }
@@ -93,7 +93,7 @@ section:nth-of-type(2n-1) {
   vertical-align: middle;
   padding-top: 15px;
   padding-left: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 #navbar .logo a:hover {
@@ -116,7 +116,7 @@ section:nth-of-type(2n-1) {
   font-weight: 800;
 }
 .biggest-heading {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 h1,
 h2,
@@ -128,12 +128,12 @@ h6 {
   font-weight: 600;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 h2 {
   font-family: monospace;
   opacity: 0.6;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
 }
 #header {
   height: 100vh;
@@ -159,7 +159,7 @@ h2 {
   border-color: #1b175a;
 }
 .socials a img.icon {
-  height: 40px;
+  height: 50px;
   width: auto;
   margin: 5px;
 }

@@ -23,6 +23,9 @@ ul {
 ul li {
   margin-bottom: 10px;
 }
+hr {
+  width: 25%;
+}
 section {
   padding: 40px 3% 50px 3%;
   border-radius: 10px;
@@ -40,24 +43,11 @@ section:nth-of-type(2n-1) {
 #ico_menu {
   height: 30px;
 }
-.jukCircular {
-  width: 60%;
-  height: auto;
-  border-radius: 100%;
-}
 .collapsable {
   display: none;
 }
 .collapsable.show {
   display: inline-block;
-}
-#profilepic {
-  position: relative;
-  width: fit-content;
-  margin-bottom: 15px;
-}
-#profilepic img {
-  border: 5px solid #fff;
 }
 .lightoverlay {
   background-color: rgba(255, 255, 255, 0.384);
@@ -102,7 +92,7 @@ section:nth-of-type(2n-1) {
 #navbar ul {
   float: right;
   list-style: none;
-  margin: 20px 0;
+  margin: 15px 0;
   text-align: right;
 }
 #navbar ul li {
@@ -136,12 +126,13 @@ h2 {
   font-size: 1.5rem;
 }
 #header {
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   width: 100%;
   color: #030013;
   overflow: hidden;
   padding: 20px;
-  padding-top: 100px;
+  padding-top: 17vh;
   position: relative;
   text-align: center;
   justify-content: center;
@@ -157,6 +148,18 @@ h2 {
 #header a[data-role="button"]:hover {
   background-color: #1b175a;
   border-color: #1b175a;
+}
+.jukCircular {
+  width: 50%;
+  height: auto;
+  border-radius: 100%;
+}
+#profilepic {
+  width: fit-content;
+  margin-bottom: 15px;
+}
+#profilepic img {
+  border: 5px solid #fff;
 }
 .socials a img.icon {
   height: 70px;
@@ -195,6 +198,7 @@ h2 {
   color: #fff;
   margin: 0;
   padding: 3%;
+  font-size: 1rem;
 }
 #footer a:hover {
   text-decoration: underline;
